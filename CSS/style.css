@@ -257,6 +257,62 @@
 button:hover {
     background: #e79f54;
 } 
+.footer {
+    background: #5f5c5a;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.footer-section h3,
+.footer-section h2 {
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-icons a img {
+    width: 28px;
+    margin-right: 10px;
+    filter: brightness(80%);
+    transition: 0.3s;
+}
+
+.social-icons a img:hover {
+    filter: brightness(100%);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #bbb;
+}
+
  @media(min-width:600px) {
      nav {
          display: block;
