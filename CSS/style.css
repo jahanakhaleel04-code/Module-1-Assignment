@@ -61,12 +61,121 @@
      background-color: #f6af65;
      color: white;
  }
- #links{
-    transition: max-height 0.4s ease;
+
+
+
+
+ .hero {
+     width: 100%;
+     height: 100vh;
+     overflow: hidden;
  }
-  #links.open {
-        max-height: 300px;            
-    }
+
+ .hero img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     position: absolute;
+     object-position: center;
+     display: block;
+     top: -10px;
+     z-index: -1;
+ }
+
+ .tagline {
+     position: relative;
+     width: 100%;
+     left: 50px;
+     /* text-align: center; */
+     top: 100px;
+     z-index: -1;
+ }
+
+ .tagline p {
+     font-size: 3.5rem;
+     color: white;
+     font-family: "Sekuya", serif;
+ }
+
+ .btn {
+     padding: 20px 20px;
+     border: none;
+     background-color: #da7104;
+     border-radius: 8px;
+     color: white;
+
+ }
+
+ .accomodation {
+     position: relative;
+     width: 80%;
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     align-items: center;
+     height: 200px;
+     background-color: rgba(255, 255, 255, 0.41);
+     transform: translate(20%, 65%);
+     padding: 50px;
+ }
+
+ .accomodation-item {
+     width: 300px;
+     height: 61px;
+     text-align: center;
+     background-color: white;
+ }
+
+ .accomodation-item p {
+     position: absolute;
+     transform: translate(27px, 18px);
+ }
+
+ .about h1 {
+     font-size: 2.5rem;
+     font-family: "Playfair", serif;
+     text-align: center;
+
+ }
+
+ .about {
+     max-width: 100%;
+ }
+
+ .services {
+     /* width: 100%; */
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 10%;
+ }
+
+ .service-item {
+     width: 100%;
+     height: 250px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+ }
+
+ .item-img img {
+     width: 80px;
+     height: 80px;
+ }
+
+ .item-img {
+     padding: 20px;
+     text-align: center;
+ }
+
+ .item-text {
+     color: #6e6a68;
+     text-align: center;
+     padding: 1px;
+ }
+
+ .item-text p {
+     margin-top: 9px;
+ }
 
  @media(min-width:600px) {
      nav {
@@ -101,45 +210,14 @@
      .tagline p {
          font-size: 5rem;
      }
- }
 
- .hero {
-     width: 100%;
-     height: 100vh;
-     overflow: hidden;
- }
+     .services {
+         width: 100%;
+         height: auto;
+         display: flex;
+         flex-direction: row;
+         gap: 50px;
+         justify-content: center;
 
- .hero img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     position: absolute;
-     object-position: center;
-     display: block;
-     top: -10px;
-     z-index: -1;
- }
-
- .tagline {
-     position: relative;
-     width: 100%;
-     left: 50px;
-     /* text-align: center; */
-     top: 100px;
-     z-index: -1;
- }
-
- .tagline p {
-     font-size: 3.5rem;
-     color: white;
-     font-family: "Sekuya", serif;
- }
-
- .btn button{
-     padding: 20px 20px;
-     border: none;
-     background-color: #da7104;
-     border-radius: 8px;
-     color: white;
-
+     }
  }

@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
-    
+
     <title>Document</title>
 </head>
 
@@ -16,14 +18,14 @@
     <header>
         <img class="logo" src="Images/logo.png" alt="">
         <nav id="links">
-            
-            <ul >
+
+            <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Destinations</a></li>
                 <li><a href="">Features</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
-            
+
         </nav>
         <i id="menu"><img src="Images/menu.svg" alt=""></i>
     </header>
@@ -32,18 +34,67 @@
             <img src="Images/hero.jpg" alt="">
             <div class="tagline">
                 <p>EXPLORE<br> THE WORLD <br>WITH US.</p>
-                <div class="btn">
-                <button>EXPLORE NOW</button>
+                <div>
+                    <button class="btn">EXPLORE NOW</button>
+                </div>
             </div>
+            <!-- <div class="accomodation">
+                <div class="accomodation-item"><p>Accomodation</p></div>
+                <div class="accomodation-item"><p>CheckIn</p></div>
+                <div class="accomodation-item"><p>CheckOut</p></div>
+                <div class="accomodation-item"><p>Guests</p></div>
+                <div class="accomodation-item"><button class="btn">Search</button></div>
+            </div> -->
+        </div>
+    </section>
+    <section>
+        <div class="about">
+            <h1>We Offer Best Services</h1>
+            <div class="services">
+                <div class="service-item">
+                    <div class="item-img">
+                        <img src="Images/5.png" alt="">
+                    </div>
+                    <div class="item-text">
+                        <h2>Calculated Weather</h2>
+                        <p>Making travel easy, one journey at a time.”</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="item-img">
+                        <img src="Images/2.png" alt="">
+                    </div>
+                    <div class="item-text">
+                        <h2>Best Flights</h2>
+                        <p>Explore more with our curated tours.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="item-img">
+                        <img src="Images/3.png" alt="">
+                    </div>
+                    <div class="item-text">
+                        <h2>Local Events</h2>
+                        <p>Your next great experience is waiting.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="item-img">
+                        <img src="Images/4.png" alt="">
+                    </div>
+                    <div class="item-text">
+                        <h2>Budget Travel</h2>
+                        <p>See the world without breaking the bank.</p>
+                    </div>
+                </div>
             </div>
-            
         </div>
     </section>
 
     <script>
         let menu = document.getElementById('menu');
         let links = document.getElementById('links');
-        menu.addEventListener("click",()=>{
+        menu.addEventListener("click", () => {
             links.classList.toggle("show")
         });
     </script>
