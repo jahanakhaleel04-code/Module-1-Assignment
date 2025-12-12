@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
+    
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <img src="Images/Creative-detailed-travel-logo-vector-free-download.jpg" alt="">
+        <img class="logo" src="Images/logo.png" alt="">
+        <nav id="links">
+            
+            <ul >
+                <li><a href="">Home</a></li>
+                <li><a href="">Destinations</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            
+        </nav>
+        <i id="menu"><img src="Images/menu.svg" alt=""></i>
     </header>
+    <section>
+        <div class="hero">
+            <img src="Images/hero.jpg" alt="">
+            <div class="tagline">
+                <p>EXPLORE<br> THE WORLD <br>WITH US.</p>
+                <div class="btn">
+                <button>EXPLORE NOW</button>
+            </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script>
+        let menu = document.getElementById('menu');
+        let links = document.getElementById('links');
+        menu.addEventListener("click",()=>{
+            links.classList.toggle("show")
+        });
+    </script>
 </body>
+
 </html>
